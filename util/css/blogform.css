@@ -1,0 +1,284 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+*button a{
+  text-decoration: none;
+}
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: #6b2ba5;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.back-to-top i:hover {
+  background: #edba60;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/*Bot*/
+.chat_icon{
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	z-index: 1000;
+	padding: 0;
+	font-size: 80px;
+	color: #fff;
+	cursor: pointer;
+  
+}
+.chat_icon i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: #6b2ba5;
+  color: #fff;
+  transition: all 0.4s;
+}
+.chat_icon i:hover {
+  background: #edba60;
+  color: #fff;
+  text-decoration: none;
+}
+.chat_box{
+	width: 400px;
+	height: 80vh;
+	position: fixed;
+	bottom: 70px;
+	right: 30px;
+	background:#dedede;
+	z-index: 1000;
+	transition: all 0.3s ease-out;
+	transform: scaleY(0);
+  border-radius: 10px;
+}
+.chat_box.active{
+	transform: scaleY(1);
+}
+#messages{
+	padding: 20px;
+}
+.my-conv-form-wrapper textarea{
+	height: 32px;
+	overflow: hidden;
+	resize: none; 
+}
+.hidden{
+	display: none !important;
+}
+ 
+@media screen and (max-width: 438px) {
+  .chat_box{
+    width: 360px;
+    height: 80vh;
+    position: fixed;
+    bottom: 70px;
+    right: 1px;
+    background:#dedede;
+    z-index: 1000;
+    transition: all 0.3s ease-out;
+    transform: scaleY(0);
+    border-radius: 10px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Disable AOS delay on mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+
+section {
+  padding:  20px 0 20px 0;        
+  overflow: hidden;
+  
+}
+
+.section-title {
+  text-align: center;
+}
+.section-title .close-btn {
+  position: relative;
+  float: right;
+  margin-right: 40px;
+  margin-top: -60px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  justify-content: center;
+  
+}
+.section-title .close-btn:hover{
+  color: #edba60;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+@media screen and (max-width: 428px){
+  .section-title .close-btn {
+    position: relative;
+    float: right;
+    margin-top: -70px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    justify-content: center;
+    right: 0px;
+  }
+  .section-title h2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 0px;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+  }
+
+}
+
+/*--------------------------------------------------------------
+# Pay-info
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Appointments
+--------------------------------------------------------------*/
+
+#appointment{
+  height: 80%;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  border-radius: 30px;
+  justify-content: center;
+}
+@media screen and (max-width: 700px){
+  #appointment{
+    height: 80%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    
+    border-radius: 30px;
+    justify-content: center;
+  }
+
+}
+.appointment .php-email-form {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.appointment .php-email-form .form-group {
+  padding-bottom: 4px;
+}
+
+.appointment .php-email-form input, .appointment .php-email-form textarea, .appointment .php-email-form select {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 5px !important;
+  color: #363957;
+}
+
+.appointment .php-email-form input:focus, .appointment .php-email-form textarea:focus, .appointment .php-email-form select:focus {
+  border-color: #363957;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.appointment .php-email-form input, .appointment .php-email-form select {
+  border-radius: 5px;
+  border: 1.5px solid #f4f4f4;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.appointment .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.appointment .php-email-form button[type="submit"] {
+  background: #ffff;
+  border: 0;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 35px;
+  color: #6b2ba5;
+  transition: 0.3s;
+  border-radius: 50px;
+  border: 2px solid #edba60;
+}
+
+.appointment .php-email-form button[type="submit"]:hover {
+  border: 2px solid #363957;
+  color: #edba60;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+  
+}
+
+
+
+/*--------------------------------------------------------------
+# Pay-info
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+

@@ -1,0 +1,417 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+*button a{
+  text-decoration: none;
+}
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: #6b2ba5;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.back-to-top i:hover {
+  background: #edba60;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/*Bot*/
+.chat_icon{
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	z-index: 1000;
+	padding: 0;
+	font-size: 80px;
+	color: #fff;
+	cursor: pointer;
+  
+}
+.chat_icon i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: #6b2ba5;
+  color: #fff;
+  transition: all 0.4s;
+}
+.chat_icon i:hover {
+  background: #edba60;
+  color: #fff;
+  text-decoration: none;
+}
+.chat_box{
+	width: 400px;
+	height: 80vh;
+	position: fixed;
+	bottom: 70px;
+	right: 30px;
+	background:#dedede;
+	z-index: 1000;
+	transition: all 0.3s ease-out;
+	transform: scaleY(0);
+  border-radius: 10px;
+}
+.chat_box.active{
+	transform: scaleY(1);
+}
+#messages{
+	padding: 20px;
+}
+.my-conv-form-wrapper textarea{
+	height: 32px;
+	overflow: hidden;
+	resize: none; 
+}
+.hidden{
+	display: none !important;
+}
+ 
+@media screen and (max-width: 438px) {
+  .chat_box{
+    width: 360px;
+    height: 80vh;
+    position: fixed;
+    bottom: 70px;
+    right: 1px;
+    background:#dedede;
+    z-index: 1000;
+    transition: all 0.3s ease-out;
+    transform: scaleY(0);
+    border-radius: 10px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Disable AOS delay on mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+
+section {
+  padding:  20px 0 20px 0;        
+  overflow: hidden;
+  
+}
+
+.section-title {
+  text-align: center;
+}
+.section-title .close-btn {
+  position: relative;
+  float: right;
+  margin-right: 40px;
+  margin-top: -60px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  justify-content: center;
+  
+}
+.section-title .close-btn:hover{
+  color: #edba60;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  color: #edba60;
+}
+@media screen and (max-width: 428px){
+  .section-title .close-btn {
+    position: relative;
+    float: right;
+    margin-top: -70px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    justify-content: center;
+    right: 0px;
+  }
+  .section-title h2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 0px;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    color: #EDBA60;
+  }
+
+}
+
+/*--------------------------------------------------------------
+# login
+--------------------------------------------------------------*/
+
+#appointment{
+  height: 80%;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  border-radius: 30px;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 700px){
+  #appointment{
+    height: 80%;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 15%; 
+    border-radius: 30px;
+    justify-content: center;
+  }
+
+}
+@media screen and (max-width: 540px){
+  #appointment{
+    height: 70%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15%; 
+    border-radius: 30px;
+    justify-content: center;
+  }
+
+}
+@media screen and (max-width: 400px){
+  #appointment{
+    height: 70%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 12%; 
+    border-radius: 30px;
+    justify-content: center;
+  }
+
+}
+.container .button-box{
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  border-radius: 25px;
+  box-shadow: 0 5px 7px 0 rgba(0, 0, 0, .3);
+}
+.container .button-box .toggle-btn {
+  padding: 12px 30px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 25px;
+  border: 0;
+  outline: none;
+  position: relative;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.container .button-box #btn{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: #EDBA60;
+  border-radius: 25px;
+  transition: .5s;
+}
+.container .social-icons {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container .social-icons a {
+  position: relative;
+  color: #6b2ba5;
+  font-size: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+  background-color: #fff;
+  padding: 10px 16px;
+  border: 1px;
+  border-radius: 50px;
+}
+
+.appointment .email-form {
+  width: 80%;
+  margin-left: 10%;
+}
+@media screen and (max-width: 400px){
+  .appointment .email-form {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+.appointment .email-form .form-group {
+  padding-bottom: 4px;
+}
+
+.appointment .email-form input, .appointment .email-form textarea, .appointment .email-form select {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 10px !important;
+  color: #363957;
+}
+
+.appointment .email-form input:focus, .appointment .email-form textarea:focus, .appointment .email-form select:focus {
+  border-color: #363957;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.appointment .email-form input, .appointment .email-form select {
+  border-radius: 5px;
+  border: 1.5px solid #f4f4f4;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container .social-icons a:hover {
+  color: #EDBA60;
+}
+
+
+ .check-box {
+  margin:  0;
+}
+
+ span a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+ span a:hover {
+  color: #363957;
+  text-decoration: none;
+}
+
+ span {
+  width: 100%;
+  color: #ffff;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  position: absolute;
+}
+@media screen and (max-width: 540px){
+
+}
+
+.appointment .email-form button[type="submit"] {
+  background: #ffff;
+  border: 0;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 0px;
+  color: #edba60;
+  transition: 0.3s;
+  width: 50%;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  
+}
+
+.appointment .email-form button[type="submit"]:hover {
+  color: #f4f4f4;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+  background-color: #edba60;
+  
+}
+p{
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.mem a{
+  font-size: 16px;
+  color: #edba60;
+  text-decoration: none;
+}
+.mem a:hover{
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+.for a{
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+
+
+}
+.for a:hover{
+  color:#edba60;
+  
+}
+
+
+
+
+/*--------------------------------------------------------------
+# login
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+

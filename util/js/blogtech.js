@@ -1,0 +1,164 @@
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+var firebaseConfig = {
+    apiKey: "AIzaSyB_iQ5XjUypbMoju5eDSbWqrx6acViYVVM",
+    authDomain: "postivae-db0ec.firebaseapp.com",
+    databaseURL: "https://postivae-db0ec.firebaseio.com",
+    projectId: "postivae-db0ec",
+    storageBucket: "postivae-db0ec.appspot.com",
+    messagingSenderId: "238036476910",
+    appId: "1:238036476910:web:0023f9ddc8b04cca8224ff",
+    measurementId: "G-98V01C8KWF"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+auth = firebase.auth();
+const db = firebase.firestore();
+//var storage = firebase.storage();
+// update firestore settings
+db.settings({ timestampsInSnapshots: true });
+
+
+auth.onAuthStateChanged(user => {
+  if (user) {
+    console.log("logged in");
+    setupUI(user);
+
+  } else {
+      console.log("logged out");
+    setupUI();
+  }
+});
+
+const loggedOutLinks = document.querySelectorAll('.logged-out');
+const loggedInLinks = document.querySelectorAll('.logged-in');
+const users = document.querySelector('.user');
+const doctors = document.querySelector('.doctor');
+
+
+
+const setupUI = (user) => {
+  if (user) {
+    console.log(user.uid);
+
+    db.collection('users').onSnapshot(querySnapshot => {
+      querySnapshot.docChanges().forEach(change => {
+        if(change.doc.id == user.uid){
+          console.log(change.doc.id);
+          users.style.display = 'block';
+          doctors.style.display = 'none';
+        }
+        
+      });
+    });
+    db.collection('doctors').onSnapshot(querySnapshot => {
+      querySnapshot.docChanges().forEach(change => {
+        if(change.doc.id == user.uid){
+          console.log(change.doc.id);
+          users.style.display = 'none';
+          doctors.style.display = 'block';
+        }
+        
+      });
+    });
+    // toggle user UI elements
+    loggedInLinks.forEach(item => item.style.display = 'block');
+    loggedOutLinks.forEach(item => item.style.display = 'none');
+
+  } else {
+
+    // toggle user elements
+    loggedInLinks.forEach(item => item.style.display = 'none');
+    loggedOutLinks.forEach(item => item.style.display = 'block');
+    users.style.display = 'none';
+    doctors.style.display = 'none';
+  }
+};
+const guideList = document.querySelector('.entry');
+const recent = document.querySelector('.recent-posts');
+
+
+auth.onAuthStateChanged(user => {
+    if (user) {
+        console.log("logged in");
+        db.collection("blogtech").onSnapshot(snapshot => {
+            setupGuides(snapshot.docs);
+            recentpost(snapshot.docs);
+        }, err => console.log(err.message));     
+        
+    } else {
+        console.log("logged out");
+        setupGuides([]);
+        recentpost([]);
+    }
+});
+
+
+// setup guides
+const setupGuides = (data) => {
+  if(data.length){
+      let html = '';
+  data.forEach(doc => {
+          let blog = doc.data();  
+          let key= doc.id;  
+          console.log(key);   
+          //console.log(blog.postName); 
+          
+       html = 
+      '<div class="entry-img"><img src="'+blog.imageURL+'" alt="" class="img-fluid"></div>'+
+        '<h2 class="entry-title"> <a href="">'+blog.postName+'</a> </h2>'+
+          '<div class="entry-meta">'+
+          '<div class="right">'+
+            '<ul><li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="">'+blog.author+'</a></li>'+
+           ' <li class="d-flex align-items-center"><i class="icofont-calendar"></i> <a href=""><time datetime="2020-01-01"></time></a></li></ul>'+
+              '</div>'+
+                '<div class="entry-content">'+
+                '<p>'+blog.postContent.substr(0,300)+' .....</p>'+
+                '<div class="read-more"> <a href="/view/tech/'+key+'">Read More</a></div>'+
+              '</div><br><br><br>'  +  html;
+      
+   
+  });
+  guideList.innerHTML = html;
+  //console.log(guideList.innerHTML);
+  }
+  else{
+      guideList.innerHTML = `<h1 class="center-align">Login to view blogs</h1>`;
+  }
+}
+
+const recentpost = (data) => {
+  if(data.length){
+      let html = '';
+  data.forEach(doc => {
+          let blog = doc.data();  
+          let key= doc.id;  
+          //console.log(key);   
+          //console.log(blog.postName); 
+          let bl=" ";
+       bl = 
+      '<div class="post-item clearfix">'+
+      '<img src="'+blog.imageURL+'" alt="">'+
+      '<h4><a href="/view/tech/'+key+'">'+blog.postName+'</a></h4>'+
+      '<time datetime="2020-01-01">Jan 1, 2020</time>'+
+    '</div>'  +  bl;
+      
+    html+=bl;
+  });
+  recent.innerHTML = html;
+  //console.log(guideList.innerHTML);
+  }
+  else{
+      guideList.innerHTML = `<h1 class="center-align">Login to view blogs</h1>`;
+  }
+}
+
+    function delpost(key){
+    db.collection("blogtech").doc(key).delete().then(() => {
+      alert("Document successfully deleted!");
+    }).catch((error) => {
+      console.error("Error removing document: ", error);
+    });
+    
+    }
