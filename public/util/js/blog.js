@@ -138,7 +138,7 @@ function upload() {
                             imageURL: downloadURL
                         });
                         console.log("Uploaded");
-                        //window.location.href = '/view/blog';
+                        //window.location.href = '/blog';
                 }
                 if (category == "3") {
                     db.collection("blogtravel")
@@ -156,7 +156,7 @@ function upload() {
 
             };
 
-           // window.location.href = '/view/blog';
+           // window.location.href = '/blog';
 
 
         });
