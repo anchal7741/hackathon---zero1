@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Blog type </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/positivae/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/positivae/icofont/icofont.min.css" rel="stylesheet">
+  <link href="/positivae/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/positivae/venobox/venobox.css" rel="stylesheet">
+  <link href="/positivae/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="/positivaepositivae/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/jquery.convform.css">
+  <link href="/css/blogfood.css" rel="stylesheet">
+</head>
+<body>
+    <button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>
+ <header id="header" class="fixed-top d-flex align-items-center ">
+   <div class="container d-flex align-items-center">
+
+     <div class="logo mr-auto">
+      
+       <a href="/"><img src="/img/new logo.png" alt="" class="img-fluid"></a>
+     </div>
+     <nav class="nav-menu d-none d-lg-block">
+       <ul>
+        <li><a href="/">Home</a></li>
+          <li class="drop-down"><a href="#services">Services</a>
+            <ul>
+              <li><a href="/view/doctorscategory">Book Appointment</a></li>
+            </ul>
+          </li>
+          <li><a href="/view/blog">Blog</a></li>
+          <li><a href="/view/anomainpage">Anonymous Chat</a></li>
+          <li><a href="/view/docdashboard" class="doctor"> Doctor Dashboard</a></li>
+       <li><a href="/view/userdashboard" class="user"> User Dashboard</a></li>
+          <li><a href="/#contact">Contact Us</a></li>         
+          <li><a class="logged-out" href="/view/signup"> Sign Up</a></li>
+         <li>
+             <a class="logged-in" href="/" id="logout"></i> Logout</a>
+         </li>
+       </ul>
+     </nav>
+   </div>
+ </header>
+  <main id="main">
+    <section id="blog" class="blog">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 entries">
+                <div class="row">
+                    <div class=" col-md-12 d-flex align-items-stretch" data-aos="fade-up">
+                      <div class="entry">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-pagination" data-aos="fade-up">
+                    <ul class="justify-content-center">
+                      <li class="disabled"><i class="icofont-rounded-left"></i></li>
+                      <li><a href="#">1</a></li>
+                      <li class="active"><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#"><i class="icofont-rounded-right"></i></a></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="sidebar">
+                <h3 class="sidebar-title">Search</h3>
+                <div class="sidebar-item search-form">
+                  <form action="">
+                    <input type="text">
+                    <button type="submit"><i class="icofont-search"></i></button>
+                  </form>
+                </div>
+                <h3 class="sidebar-title">Categories</h3>
+                <div class="sidebar-item categories">
+                  <ul>
+                    <li><a href="/view/tech">Technology</a></li>
+                    <li><a href="/view/travel">Travel</a></li>
+                    <li><a href="/view/humour">Humour</a></li>
+                    <li><a href="/view/food">Food</a></li>
+                    <li><a href="/view/other">Others</a></li>
+                  </ul>
+                </div>
+                <h3 class="sidebar-title">Recent Posts</h3>
+                <div class="sidebar-item recent-posts">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
+  <footer id="footer">
+  </footer>
+<div class="chat_icon">
+	<i class="icofont-robot" aria-hidden="true"></i>
+</div>
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+      <select data-conv-question="Hello! How can I help you" name="category">
+        <option value="WebDevelopment">Website Development ?</option>
+        <option value="DigitalMarketing">Digital Marketing ?</option>
+      </select>
+      <div data-conv-fork="category">
+        <div data-conv-case="WebDevelopment">
+          <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">    
+        </div>
+        <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="Please, enter your company name"> 
+        </div>
+      </div>
+      <input type="text" name="name" data-conv-question="Please, Enter your name">
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+      <select data-conv-question="Please Conform">
+        <option value="Yes">Conform</option>
+      </select>
+  	</form>
+	</div>
+</div>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js "></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js "></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js "></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js "></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js "></script>
+  <script src="/positivae/jquery/jquery.min.js"></script>
+  <script src="/positivae/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/positivae/jquery.easing/jquery.easing.min.js"></script>
+  <script src="/positivae/php-email-form/validate.js"></script>
+  <script src="/positivae/jquery-sticky/jquery.sticky.js"></script>
+  <script src="/positivae/venobox/venobox.min.js"></script>
+  <script src="/positivae/owl.carousel/owl.carousel.min.js"></script>
+  <script src="/positivae/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/positivae/aos/aos.js"></script>
+   <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
+   <script type="text/javascript" src="/js/jquery.convform.js"></script>
+   <script type="text/javascript" src="/js/custom.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/blogtech.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#appointment{
+    height: 80%;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 8%;
+    margin-bottom: 4%;
+    border-radius: 10px;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  
+  @media screen and (max-width: 700px){
+    #appointment{
+      height: 80%;
+      width: 70%;
+      margin-left: 15%;
+      margin-top: 15%; 
+      border-radius: 30px;
+      justify-content: center;
+    }
+  
+  }
+  @media screen and (max-width: 540px){
+    #appointment{
+      height: 70%;
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 15%; 
+      border-radius: 30px;
+      justify-content: center;
+    }
+  
+  }
+  @media screen and (max-width: 400px){
+    #appointment{
+      height: 70%;
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 15%; 
+      border-radius: 30px;
+      justify-content: center;
+    }
+  
+  }
+
+
+  #appointment section {
+    padding:  20px 0 20px 0;        
+    overflow: hidden;
+    
+  }
+  
+  #appointment .section-title {
+    text-align: center;
+  }
+  #appointment .section-title .close-btn {
+    position: relative;
+    float: right;
+    margin-right: 40px;
+    margin-top: -40px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    justify-content: center;
+    
+  }
+  #appointment .section-title .close-btn:hover{
+    color: #edba60;
+  }
+
+
+
+
+  #appointment .row1, .row2, .row3, .row4, .row5{
+      width: 80%;
+      margin-left: 8%;
+     
+  }
+  #appointment .row1  #subject, .row2  #email, .row3  #phone, .row4 #certlink, .row5 #socialid{
+      width: 100%;
+      margin-bottom: 5px;
+      font-size: 15px;
+      padding: 5px 10px 5px 10px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+  }
+  #appointment .row6{
+      margin-left: 42%;
+      
+  }
+  #appointment .row6 #but{
+      padding: 7px 30px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      background-color: #edba60;
+      color: #ffff;
+  }
+  #appointment .row6 #but:hover{
+ background-color: #f4f4f4;
+ color: #edba60;
+  }
