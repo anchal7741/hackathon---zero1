@@ -25,165 +25,165 @@ app.use('/positivae', express.static(__dirname + 'util/positivae'))
 //app.use(bodyParser.json())
 
 app.get('/',(req, res) =>{
-    res.sendFile(__dirname + '/view/home.html')
+    res.sendFile(__dirname + ' /home.html')
 })
-app.get('/view/blog',(req, res) =>{
-    res.sendFile(__dirname + '/view/blog.html')
+app.get(' /blog',(req, res) =>{
+    res.sendFile(__dirname + ' /blog.html')
 })
-app.get('/view/anomainpage',(req, res) =>{
-    res.sendFile(__dirname + '/view/anomainpage.html')
+app.get(' /anomainpage',(req, res) =>{
+    res.sendFile(__dirname + ' /anomainpage.html')
 })
-app.get('/view/login',(req, res) =>{
-    res.sendFile(__dirname + '/view/login.html')
+app.get(' /login',(req, res) =>{
+    res.sendFile(__dirname + ' /login.html')
 })
-app.get('/view/signup',(req, res) =>{
-    res.sendFile(__dirname + '/view/signup.html')
+app.get(' /signup',(req, res) =>{
+    res.sendFile(__dirname + ' /signup.html')
 })
-app.get('/view/food',(req, res) =>{
-    res.sendFile(__dirname + '/view/blogfood.html')
+app.get(' /food',(req, res) =>{
+    res.sendFile(__dirname + ' /blogfood.html')
 })
-app.get('/view/travel',(req, res) =>{
-    res.sendFile(__dirname + '/view/blogTravel.html')
+app.get(' /travel',(req, res) =>{
+    res.sendFile(__dirname + ' /blogTravel.html')
 })
-app.get('/view/tech',(req, res) =>{
-    res.sendFile(__dirname + '/view/blogtech.html')
+app.get(' /tech',(req, res) =>{
+    res.sendFile(__dirname + ' /blogtech.html')
 })
-app.get('/view/humour',(req, res) =>{
-    res.sendFile(__dirname + '/view/bloghumour.html')
+app.get(' /humour',(req, res) =>{
+    res.sendFile(__dirname + ' /bloghumour.html')
 })
-app.get('/view/food/:postName',(req, res) =>{
+app.get(' /food/:postName',(req, res) =>{
     
     
-    res.sendFile(__dirname + '/view/blogfoodmain.html')
+    res.sendFile(__dirname + ' /blogfoodmain.html')
 })
 
-app.get('/view/tech/:postName',(req, res) =>{
+app.get(' /tech/:postName',(req, res) =>{
     
     
-    res.sendFile(__dirname + '/view/blogtechmain.html')
+    res.sendFile(__dirname + ' /blogtechmain.html')
 })
-app.get('/view/humour/:postName',(req, res) =>{
+app.get(' /humour/:postName',(req, res) =>{
     
     
-    res.sendFile(__dirname + '/view/bloghumourmain.html')
+    res.sendFile(__dirname + ' /bloghumourmain.html')
 })
-app.get('/view/travel/:postName',(req, res) =>{
+app.get(' /travel/:postName',(req, res) =>{
     
     
-    res.sendFile(__dirname + '/view/blogtravelmain.html')
+    res.sendFile(__dirname + ' /blogtravelmain.html')
 })
-app.get('/view/other',(req, res) =>{
+app.get(' /other',(req, res) =>{
     
     
-    res.sendFile(__dirname + '/view/blogother.html')
+    res.sendFile(__dirname + ' /blogother.html')
 })
-app.get('/view/other/:postName',(req, res) =>{
+app.get(' /other/:postName',(req, res) =>{
     
     
-    res.sendFile(__dirname + '/view/blogothermain.html')
+    res.sendFile(__dirname + ' /blogothermain.html')
 })
-app.get('/view/doctorscategory',(req, res) =>{
-    res.sendFile(__dirname + '/view/Departments.html')
+app.get(' /doctorscategory',(req, res) =>{
+    res.sendFile(__dirname + ' /Departments.html')
 })
-app.get('/view/doctorlist',(req, res) =>{
-    res.sendFile(__dirname + '/view/doctorlist.html')
+app.get(' /doctorlist',(req, res) =>{
+    res.sendFile(__dirname + ' /doctorlist.html')
 })
 
-app.get('/view/doctorabout',(req, res) =>{
-    res.sendFile(__dirname + '/view/doctorabout.html')
+app.get(' /doctorabout',(req, res) =>{
+    res.sendFile(__dirname + ' /doctorabout.html')
 })
-app.get('/view/reviewform',(req, res) =>{
-    res.sendFile(__dirname + '/view/reviewform.html')
+app.get(' /reviewform',(req, res) =>{
+    res.sendFile(__dirname + ' /reviewform.html')
 })
-app.get('/view/drappointmentform',(req, res) =>{
-    res.sendFile(__dirname + '/view/drappointmentform.html')
+app.get(' /drappointmentform',(req, res) =>{
+    res.sendFile(__dirname + ' /drappointmentform.html')
 })
-app.get('/view/blogform',(req, res) =>{
-    res.sendFile(__dirname + '/view/blogform.html')
+app.get(' /blogform',(req, res) =>{
+    res.sendFile(__dirname + ' /blogform.html')
 })
-app.get('/view/t&co',(req, res) =>{
-    res.sendFile(__dirname + '/view/t&co.html')
+app.get(' /t&co',(req, res) =>{
+    res.sendFile(__dirname + ' /t&co.html')
 })
-app.get('/view/donateus',(req, res) =>{
-    res.sendFile(__dirname + '/view/donateus.html')
+app.get(' /donateus',(req, res) =>{
+    res.sendFile(__dirname + ' /donateus.html')
 })
-app.get('/view/docform',(req, res) =>{
-    res.sendFile(__dirname + '/view/doctorform.html')
+app.get(' /docform',(req, res) =>{
+    res.sendFile(__dirname + ' /doctorform.html')
 })
-app.get('/view/meditation-cat', (req, res) => {
-    res.sendFile(__dirname + '/view/meditation-cat.html')
+app.get(' /meditation-cat', (req, res) => {
+    res.sendFile(__dirname + ' /meditation-cat.html')
 })
-app.get('/view/meditation', (req, res) => {
-    res.sendFile(__dirname + '/view/meditation.html')
+app.get(' /meditation', (req, res) => {
+    res.sendFile(__dirname + ' /meditation.html')
 })
-app.get('/view/meditation-profile', (req, res) => {
-    res.sendFile(__dirname + '/view/meditation-profile.html')
+app.get(' /meditation-profile', (req, res) => {
+    res.sendFile(__dirname + ' /meditation-profile.html')
 })
-app.get('/view/influencerapplication',(req, res) =>{
-    res.sendFile(__dirname + '/view/influencerapplication.html')
-})
-
-app.get('/view/docdashboard',(req, res) =>{
-    res.sendFile(__dirname + '/view/docdash.html')
-})
-app.get('/view/docprofileupdate/:postName',(req, res) =>{
-    
-    res.sendFile(__dirname + '/view/docprofileupdate.html')
+app.get(' /influencerapplication',(req, res) =>{
+    res.sendFile(__dirname + ' /influencerapplication.html')
 })
 
-app.get('/view/docappointments/:postName',(req, res) =>{
-    
-    
-    res.sendFile(__dirname + '/view/docappoint.html')
+app.get(' /docdashboard',(req, res) =>{
+    res.sendFile(__dirname + ' /docdash.html')
 })
-app.get('/view/docreviews/:postName',(req, res) =>{
+app.get(' /docprofileupdate/:postName',(req, res) =>{
     
-    
-    res.sendFile(__dirname + '/view/docreviews.html')
-})
-app.get('/view/docprescriptions/:postName',(req, res) =>{
-    
-    
-    res.sendFile(__dirname + '/view/docpresc.html')
-})
-app.get('/view/docprofile/:postName',(req, res) =>{
-    
-    
-    res.sendFile(__dirname + '/view/docprofile.html')
-})
-app.get('/view/userdashboard',(req, res) =>{
-    res.sendFile(__dirname + '/view/userdash.html')
-})
-app.get('/view/userprofileupdate/:postName',(req, res) =>{
-    
-    res.sendFile(__dirname + '/view/profileupdate.html')
+    res.sendFile(__dirname + ' /docprofileupdate.html')
 })
 
-app.get('/view/userappointments/:postName',(req, res) =>{
+app.get(' /docappointments/:postName',(req, res) =>{
     
     
-    res.sendFile(__dirname + '/view/userappoint.html')
+    res.sendFile(__dirname + ' /docappoint.html')
 })
-app.get('/view/usertransactions/:postName',(req, res) =>{
+app.get(' /docreviews/:postName',(req, res) =>{
     
     
-    res.sendFile(__dirname + '/view/usertransc.html')
+    res.sendFile(__dirname + ' /docreviews.html')
 })
-app.get('/view/userprescriptions/:postName',(req, res) =>{
+app.get(' /docprescriptions/:postName',(req, res) =>{
     
     
-    res.sendFile(__dirname + '/view/userpresc.html')
+    res.sendFile(__dirname + ' /docpresc.html')
 })
-app.get('/view/userprofile/:postName',(req, res) =>{
+app.get(' /docprofile/:postName',(req, res) =>{
     
     
-    res.sendFile(__dirname + '/view/userprofile.html')
+    res.sendFile(__dirname + ' /docprofile.html')
+})
+app.get(' /userdashboard',(req, res) =>{
+    res.sendFile(__dirname + ' /userdash.html')
+})
+app.get(' /userprofileupdate/:postName',(req, res) =>{
+    
+    res.sendFile(__dirname + ' /profileupdate.html')
+})
+
+app.get(' /userappointments/:postName',(req, res) =>{
+    
+    
+    res.sendFile(__dirname + ' /userappoint.html')
+})
+app.get(' /usertransactions/:postName',(req, res) =>{
+    
+    
+    res.sendFile(__dirname + ' /usertransc.html')
+})
+app.get(' /userprescriptions/:postName',(req, res) =>{
+    
+    
+    res.sendFile(__dirname + ' /userpresc.html')
+})
+app.get(' /userprofile/:postName',(req, res) =>{
+    
+    
+    res.sendFile(__dirname + ' /userprofile.html')
 })
 
 //payment
 
-app.get("/view/payment", (req, res) => {
-    res.sendFile(__dirname + "/view/pay.html");
+app.get(" /payment", (req, res) => {
+    res.sendFile(__dirname + " /pay.html");
   });
   
   app.post("/paynow", [parseUrl, parseJson], (req, res) => {
@@ -285,7 +285,7 @@ app.get("/view/payment", (req, res) => {
              var _result = JSON.parse(response);
                if(_result.STATUS == 'TXN_SUCCESS') {
                    //res.send("Payment Success")
-                   res.sendFile(__dirname + '/view/home.html')
+                   res.sendFile(__dirname + ' /home.html')
                }else {
                    res.send('payment failed')
                }

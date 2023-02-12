@@ -2436,7 +2436,7 @@
 		} else if (video.type === 'vimeo') {
 			html.attr( 'src', '//player.vimeo.com/video/' + video.id + '?autoplay=1' );
 		} else if (video.type === 'vzaar') {
-			html.attr( 'src', '//view.vzaar.com/' + video.id + '/player?autoplay=true' );
+			html.attr( 'src', '/ .vzaar.com/' + video.id + '/player?autoplay=true' );
 		}
 
 		iframe = $(html).wrap( '<div class="owl-video-frame" />' ).insertAfter(item.find('.owl-video'));

@@ -121,7 +121,7 @@ const setupGuides =(data) => {
               <p class="card-description">
               ${blog.About}
               </p>
-              <a href="/view/docprofileupdate/45" class="btn btn-primary btn-round">Update</a>
+              <a href=" /docprofileupdate/45" class="btn btn-primary btn-round">Update</a>
       </div>` +li ;
       
     html=li;

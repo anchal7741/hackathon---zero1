@@ -114,7 +114,7 @@ const setupGuides = (data) => {
             let bl=" ";
             bl = 
             '<div class="entry-img"><img src="'+blog.imageURL+'" alt="" class="img-fluid"> </div>'+
-            ' <h2 class="entry-title"><a href="/view/humour/'+key+'">'+blog.postName+'</a></h2>'+
+            ' <h2 class="entry-title"><a href=" /humour/'+key+'">'+blog.postName+'</a></h2>'+
           '<div class="entry-meta"><ul>'+
               '<li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">'+blog.author+'</a></li>'+
               '<li class="d-flex align-items-center"><i class="icofont-calendar"></i> <a href="blog-single.html"><time datetime="2020-01-01"></time></a></li>'+
@@ -150,7 +150,7 @@ const recentpost = (data) => {
        bl = 
       '<div class="post-item clearfix">'+
       '<img src="'+blog.imageURL+'" alt="">'+
-      '<h4><a href="/view/humour/'+key+'">'+blog.postName+'</a></h4>'+
+      '<h4><a href=" /humour/'+key+'">'+blog.postName+'</a></h4>'+
       '<time datetime="2020-01-01">Jan 1, 2020</time>'+
     '</div>'  +  bl;
       

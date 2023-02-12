@@ -111,7 +111,7 @@ function upload() {
                             imageURL: downloadURL
                         });
                     console.log("Uploaded");
-                   // window.location.href = '/view/tech';
+                   // window.location.href = ' /tech';
 
                 }
                 if (category == "2") {
@@ -125,7 +125,7 @@ function upload() {
                             imageURL: downloadURL
                         });
                         console.log("Uploaded");
-                        //window.location.href = '/view/food';
+                        //window.location.href = ' /food';
                 }
                 if (category == "4") {
                     db.collection("bloghumour")
@@ -151,7 +151,7 @@ function upload() {
                             imageURL: downloadURL
                         });
                         console.log("Uploaded");
-                       // window.location.href = '/view/travel';
+                       // window.location.href = ' /travel';
                 }
 
             };

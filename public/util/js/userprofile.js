@@ -120,7 +120,7 @@ data.forEach(doc => {
             <p class="card-description">
             ${blog.aboutme}
             </p>
-            <a href="/view/docprofileupdate/45" class="btn btn-primary btn-round">Update</a>
+            <a href=" /docprofileupdate/45" class="btn btn-primary btn-round">Update</a>
     </div>` +li ;
     
   html=li;

@@ -150,7 +150,7 @@ const recentpost = (data) => {
        bl = 
       '<div class="post-item clearfix">'+
       '<img src="'+blog.imageURL+'" alt="">'+
-      '<h4><a href="/view/food/'+key+'">'+blog.postName+'</a></h4>'+
+      '<h4><a href=" /food/'+key+'">'+blog.postName+'</a></h4>'+
       '<time datetime="2020-01-01">Jan 1, 2020</time>'+
     '</div>'  +  bl;
       

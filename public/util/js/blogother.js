@@ -114,7 +114,7 @@ const setupGuides = (data) => {
               '</div>'+
                 '<div class="entry-content">'+
                 '<p>'+blog.postContent.substr(0,300)+' .....</p>'+
-                '<div class="read-more"> <a href="/view/food/'+key+'">Read More</a></div>'+
+                '<div class="read-more"> <a href=" /food/'+key+'">Read More</a></div>'+
               '</div><br><br><br>' +html ;
       
     ;
@@ -139,7 +139,7 @@ const recentpost = (data) => {
        bl = 
       '<div class="post-item clearfix">'+
       '<img src="'+blog.imageURL+'" alt="">'+
-      '<h4><a href="/view/food/'+key+'">'+blog.postName+'</a></h4>'+
+      '<h4><a href=" /food/'+key+'">'+blog.postName+'</a></h4>'+
       '<time datetime="2020-01-01">Jan 1, 2020</time>'+
     '</div>'  +  bl;
       
