@@ -1,7 +1,4 @@
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 :root{
   --first-color:#6b2ba5;
   --second-color:#edba60;
@@ -9,7 +6,6 @@
   --fourth-color:#5f5f5f;
   --fifth-color:#fff;
   --sixth-color:#f4f4f4;
-
 }
 
 body {
@@ -23,8 +19,6 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
-
-/*Bot*/
 .chat_icon{
 	position: fixed;
 	bottom: 15px;
@@ -95,18 +89,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Disable AOS delay on mobile
---------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
 #header {
   height: 80px;
   transition: all 0.5s;
@@ -148,10 +136,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/* Desktop Navigation */
 .nav-menu, .nav-menu * {
   margin: 0;
   padding: 0;
@@ -279,7 +263,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
@@ -386,11 +369,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--fifth-color);
 }
 
-
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-
 section {
   padding:  60px 0 50px 0;        
   overflow: hidden;
@@ -442,9 +420,6 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Departments
---------------------------------------------------------------*/
 .departments {
   overflow: hidden;
   margin-top: 50px;
@@ -527,11 +502,6 @@ section {
 }
 
 
-
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
 #footer {
   background: var(--first-color);
   padding: 0 0 40px 0;

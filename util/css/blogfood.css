@@ -8,7 +8,7 @@
 body {
     font-family: "Open Sans", sans-serif;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat", sans-serif;
   }
@@ -17,8 +17,6 @@ body {
   }
 
 
-  
-/*Bot*/
 .chat_icon{
 	position: fixed;
 	bottom: 15px;
@@ -28,7 +26,6 @@ body {
 	font-size: 80px;
 	color: var(--five-color);
 	cursor: pointer;
-  
 }
 .chat_icon i {
   display: flex;
@@ -89,9 +86,6 @@ body {
   }
 }
 
-/*--------------------------------------------------------------
-# Disable AOS delay on mobile
---------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
@@ -99,9 +93,6 @@ body {
 }
 
  
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
 #header {
     height: 80px;
     transition: all 0.5s;
@@ -143,10 +134,6 @@ body {
     }
   }
   
-  /*--------------------------------------------------------------
-  # Navigation Menu
-  --------------------------------------------------------------*/
-  /* Desktop Navigation */
   .nav-menu, .nav-menu * {
     margin: 0;
     padding: 0;
@@ -272,7 +259,7 @@ body {
     }
   }
   
-  /* Mobile Navigation */
+  
   .mobile-nav-toggle {
     position: fixed;
     right: 15px;
@@ -380,9 +367,6 @@ body {
   }
   
 
-  /*--------------------------------------------------------------
-  # Sections General
-  --------------------------------------------------------------*/
   section {
     padding: 60px 0;
     overflow: hidden;
@@ -411,9 +395,6 @@ body {
   }
   
  
-  /*--------------------------------------------------------------
-  # Blog
-  --------------------------------------------------------------*/
   .blog {
     padding: 100px 0 40px 0;
   }
@@ -583,7 +564,7 @@ body {
     padding: 3px 10px;
     position: relative;
   }
-  
+
   .blog .sidebar .search-form form input[type="text"] {
     border: 0;
     padding: 4px;
@@ -668,10 +649,5 @@ body {
     color: var(--fourth-color);
   }
   
-  /*--------------------------------------------------------------
-  # Footer
-  --------------------------------------------------------------*/
-  #footer {
-    
-  }
+
   

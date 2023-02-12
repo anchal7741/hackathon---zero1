@@ -1,7 +1,4 @@
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -13,9 +10,6 @@ h1, h2, h3, h4, h5, h6 {
 *button a{
   text-decoration: none;
 }
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
   display: none;
@@ -44,7 +38,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*Bot*/
 .chat_icon{
 	position: fixed;
 	bottom: 15px;
@@ -115,18 +108,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Disable AOS delay on mobile
---------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
 #header {
   height: 80px;
   transition: all 0.5s;
@@ -168,10 +155,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/* Desktop Navigation */
 .nav-menu, .nav-menu * {
   margin: 0;
   padding: 0;
@@ -297,7 +280,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
@@ -405,9 +387,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
 
 section {
   padding:  60px 0 50px 0;        
@@ -462,130 +441,6 @@ section {
 }
 
 
-/*
-.services{
-  margin-bottom: 60px;
-}
-.services .icon-box {
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 0 29px 0 rgba(25, 27, 32, 0.12);
-  transition: all 0.3s ease-in-out;
-  border-radius: 8px;
-  z-index: 1;
-}
-
-.services .icon-box::before {
-  content: '';
-  position: absolute;
-  background: #be9cdd;
-  right: -60px;
-  top: -40px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  transition: all 0.3s;
-  z-index: -1;
-}
-
-.services .icon-box:hover::before {
-  background: #6b2ba5;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0px;
-}
-
-.services .icon {
-  margin: 0 auto 20px auto;
-  padding-top: 10px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  background: #6b2ba5;
-  transition: all 0.3s ease-in-out;
-}
-
-.services .icon i {
-  font-size: 36px;
-  line-height: 1;
-  color: #fff;
-}
-.services .section-title {
-  font-weight: 700;
-  margin-top: 15px;
-  margin-bottom: 25px;
-  font-size: 20px;
- color: #363957;
-}
-
-.services .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .title a {
-  color: #111;
-  text-decoration: none;
-}
-
-.services .description {
-  font-size: 15px;
-  line-height: 28px;
-  margin-bottom: 0;
-}
-
-.services .btn-get-started{
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 15px;
-  margin-top: 25px;
-  border-radius: 50px;
-  transition: 0.5s;
-  color: #f4f4f4;
-  background: #6b2ba5;
-  border: 2px solid #f4f4f4;
-  
-}
-
-.services .btn-get-started:hover{
-  background: #f4f4f4;
-  color: #6b2ba5;
-  text-decoration: none;
-}
-
-.services .icon-box:hover .title a, .services .icon-box:hover .description {
-  color: #fff;
-}
-
-.services .icon-box:hover .icon {
-  background: #fff;
-}
-
-.services .icon-box:hover .icon i {
-  color: #6b2ba5;
-}
-@media (max-width: 1200px) {
-  .services {
-    display: flex;
-    flex-direction: row;
-
-  }
-}*/
-
-
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
   padding: 80px 80px 80px 80px;
@@ -723,9 +578,6 @@ section {
   fill: #11dbcf;
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
 #footer {
   background: #6b2ba5;
   padding: 0 0 40px 0;
